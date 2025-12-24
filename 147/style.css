@@ -6,23 +6,39 @@ body {
 
 .header {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: #ff5722;
-  padding: 15px 30px;
-  color: white;
+    justify-content: space-between;
+    align-items: center;
+    background: #ff5722;
+    padding: 10px 30px;
+    /* Уменьшаем padding для компактности */
+    color: white;
+    position: fixed;
+    /* Это ключевое свойство */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
+.main {
+  margin-top: 70px;
+  /* Высота шапки */
+}
+
+
 .logo {
-  font-size: 24px;
+  font-size: 20px;
   font-weight: bold;
+  
 }
 
 .nav a {
   color: white;
-  margin-left: 20px;
+  margin-left: 14px;
   text-decoration: none;
   transition: 0.3s;
+  font-size: 14px;
 }
 
 .nav a:hover {
@@ -94,8 +110,12 @@ body {
   transform: scale(1.1);
 }
 .rides-gallery {
-  padding: 40px;
-  text-align: center;
+  border: 3px solid #ff5722;
+    padding: 20px;
+    border-radius: 15px;
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 .gallery {
@@ -192,7 +212,7 @@ body::before {
 
   z-index: -1;
 }
- /* Добавьте в style.css */
+ 
  .main h1 {
    border: 3px solid #ff5722;
    padding: 20px;
