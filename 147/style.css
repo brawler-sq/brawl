@@ -439,43 +439,7 @@ p {
   margin: 0;
 }
 
-/* Контакты */
-#contacts {
-  text-align: center;
-  padding: 2rem 1rem;
-}
 
-#contacts>p {
-  font-size: 1.2rem;
-  max-width: 600px;
-  margin: 0 auto 2rem;
-}
-
-.contact-info {
-  background: var(--bg-white);
-  padding: 2.5rem !important;
-  border-radius: var(--border-radius) !important;
-  max-width: 600px !important;
-  margin: 2rem auto !important;
-  box-shadow: var(--shadow) !important;
-  border-left: 4px solid var(--secondary) !important;
-}
-
-.contact-info p {
-  margin: 1.25rem 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
-  font-size: 1.15rem;
-  color: var(--text-dark);
-}
-
-.contact-info i {
-  color: var(--secondary);
-  font-size: 1.3rem;
-  width: 24px;
-}
 
 /* Подвал */
 .footer {
@@ -615,5 +579,54 @@ p {
   .review-card,
   .contact-info {
     padding: 1.5rem !important;
+  }
+}
+
+/* Контакты */
+#contacts {
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+#contacts h2 {
+  margin-bottom: 2.5rem;
+}
+
+.contact-info {
+  background: var(--bg-white);
+  padding: 2.5rem;
+  border-radius: var(--border-radius);
+  max-width: 600px;
+  margin: 2rem auto;
+  box-shadow: var(--shadow);
+  border-left: 4px solid var(--secondary);
+}
+
+.contact-info p {
+  margin: 1.25rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  font-size: 1.15rem;
+  color: var(--text-dark);
+}
+
+.contact-info i {
+  color: var(--secondary);
+  font-size: 1.3rem;
+  width: 24px;
+}
+
+/* Адаптивность для контактов */
+@media (max-width: 768px) {
+  .contact-info {
+    padding: 1.5rem !important;
+  }
+
+  .contact-info p {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.5rem;
   }
 }
