@@ -630,3 +630,85 @@ p {
     gap: 0.5rem;
   }
 }
+
+
+/* Дополнительные улучшения */
+
+/* Улучшение hover для карточек аттракционов */
+.ride-card img {
+  transition: transform 0.4s ease;
+}
+
+.ride-card:hover img {
+  transform: scale(1.05);
+}
+
+/* Стили для ссылок в футере */
+.footer-column a {
+  color: rgba(255, 255, 255, 0.85);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-column a:hover {
+  color: var(--primary-light);
+  text-decoration: underline;
+}
+
+/* Улучшение адаптивности для навигации */
+@media (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .nav a {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .header {
+    position: relative;
+    padding: 1rem;
+  }
+
+  .main {
+    padding-top: 2rem;
+  }
+}
+
+/* Улучшение контактов на мобильных */
+@media (max-width: 768px) {
+  .contact-info {
+    padding: 1.5rem;
+  }
+
+  .contact-info p {
+    flex-direction: row;
+    justify-content: flex-start;
+    text-align: left;
+  }
+}
+
+/* Плавное скроллирование при нажатии на якорные ссылки */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Улучшение читаемости текста в предложениях */
+.offer-card p {
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+/* Улучшение кнопок */
+.mini-btn {
+  transition: all 0.3s ease;
+}
+
+.mini-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(33, 150, 243, 0.4);
+}
