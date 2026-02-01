@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Парк Аттракционов FunPark</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="FunPark — парк аттракционов для всей семьи. Колесо обозрения, американские горки, карусели и многое другое!">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="logo">
+      <i class="fa-solid fa-ferris-wheel"></i>
+      <span>FunPark</span>
+    </div>
+    <nav class="nav">
+      <a href="#home"><i class="fa-solid fa-house"></i> Главная</a>
+      <a href="#attractions"><i class="fa-solid fa-rocket"></i> Аттракционы</a>
+      <a href="#tickets"><i class="fa-solid fa-ticket"></i> Билеты</a>
+      <a href="#special-offers"><i class="fa-solid fa-gift"></i> Акции</a>
+      <a href="#reviews"><i class="fa-solid fa-star"></i> Отзывы</a>
+      <a href="#contacts"><i class="fa-solid fa-phone"></i> Контакты</a>
+    </nav>
+  </header>
+
+  <main class="main">
+    <section id="home">
+      <h1>Добро пожаловать в FunPark!</h1>
+      <p>Место ярких эмоций и веселья для всей семьи 🎡</p>
+    </section>
+
+    <section id="attractions" class="rides-gallery">
+      <h2>Наши аттракционы</h2>
+
+      <div class="gallery">
+        <div class="ride-card" style="--i: 0">
+          <img src="photo/koleco.webp" alt="Колесо обозрения в парке FunPark" loading="lazy">
+          <p>Колесо обозрения</p>
+        </div>
+
+         <div class="ride-card" style="--i: 1">
+    <img src="photo/горки.jpg" alt="Американские горки в FunPark" loading="lazy">
+    <p>Американские горки</p>
+  </div>
+
+          <div class="ride-card" style="--i: 2">
+            <img src="photo/карусель.jpeg" alt="Детская карусель в парке" loading="lazy">
+            <p>Карусель</p>
+          </div>
+          </div>
+
+    <section id="tickets">
+      <h2>Билеты</h2>
+      <p>Выберите подходящий билет для посещения парка:</p>
+
+      <div class="features">
+        <div class="feature">
+          <i class="fa-solid fa-roller-coaster"></i>
+          <h3>Экстрим</h3>
+          <p>Самые захватывающие горки</p>
+          <a class="mini-btn" href="#">Купить</a>
+        </div>
+        <div class="feature">
+          <i class="fa-solid fa-child"></i>
+          <h3>Для детей</h3>
+          <p>Безопасные аттракционы</p>
+          <a class="mini-btn" href="#">Купить</a>
+        </div>
+        <div class="feature">
+          <i class="fa-solid fa-ice-cream"></i>
+          <h3>Отдых</h3>
+          <p>Кафе и зоны отдыха</p>
+          <a class="mini-btn" href="#">Купить</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="special-offers" class="special-offers">
+      <h2>🎉 Специальные предложения</h2>
+      <div class="offers-container">
+        <div class="offer-card birthday-offer">
+          <h3>🎂 День рождения</h3>
+          <p>Скидка 20% имениннику и друзьям!</p>
+        </div>
+        <div class="offer-card family-offer">
+          <h3>👨‍👩‍👧‍👦 Семейный билет</h3>
+          <p>Экономьте до 30% на семейном посещении</p>
+        </div>
+        <div class="offer-card morning-offer">
+          <h3>🌅 Утренний визит</h3>
+          <p>Скидка 15% с 10:00 до 13:00</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="reviews" class="reviews-section">
+      <h2>⭐ Отзывы посетителей</h2>
+      <div class="reviews-grid">
+        <div class="review-card">
+          <div class="stars">★★★★★</div>
+          <p class="review-text">"Лучший парк! Дети в восторге от аттракционов!"</p>
+          <p class="review-author">— Мария С.</p>
+        </div>
+        <div class="review-card">
+          <div class="stars">★★★★★</div>
+          <p class="review-text">"Отличное место для семейного отдыха!"</p>
+          <p class="review-author">— Алексей К.</p>
+        </div>
+        <div class="review-card">
+          <div class="stars">★★★★☆</div>
+          <p class="review-text">"Очень понравились американские горки!"</p>
+          <p class="review-author">— Денис П.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacts">
+      <h2>Контакты</h2>
+      <div class="contact-info">
+        <p><i class="fa-solid fa-phone"></i> +7 (900) 555-35-35</p>
+        <p><i class="fa-solid fa-location-dot"></i> г. Москва, ул. Парковая 10</p>
+        <p><i class="fa-solid fa-envelope"></i> info@funpark.ru</p>
+        <p><i class="fa-regular fa-clock"></i> Пн–Пт: 10:00 – 20:00 | Сб–Вс: 10:00 – 23:00</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-column">
+        <h3>🎡 FunPark</h3>
+        <p>Парк аттракционов и развлечений для всей семьи!</p>
+      </div>
+      <div class="footer-column">
+        <h4>Навигация</h4>
+        <p><a href="#home">Главная</a></p>
+        <p><a href="#attractions">Аттракционы</a></p>
+        <p><a href="#tickets">Билеты</a></p>
+        <p><a href="#special-offers">Акции</a></p>
+      </div>
+      <div class="footer-column">
+        <h4>Мы в соцсетях</h4>
+        <p><a href="#"><i class="fa-brands fa-vk"></i> ВКонтакте</a></p>
+        <p><a href="#"><i class="fa-brands fa-telegram"></i> Telegram</a></p>
+        <p><a href="#"><i class="fa-brands fa-youtube"></i> YouTube</a></p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      © 2025 Парк аттракционов «FunPark»
+    </div>
+  </footer>
+
+</body>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const sections = document.querySelectorAll('main > section');
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.15 });
+
+    sections.forEach(section => {
+      observer.observe(section);
+    });
+  });
+</script>
+
+</html>
