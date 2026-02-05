@@ -52,7 +52,7 @@
     </div>
 
     <div class="ride-card" style="--i: 1">
-      <img src="photo/горки.jpg" alt="Американские горки в FunPark" loading="lazy">
+      <img src="photo/gorki.jpg" alt="Американские горки в FunPark" loading="lazy">
       <p>Американские горки</p>
     </div>
 
@@ -216,17 +216,47 @@
 <script>
   document.addEventListener('DOMContentLoaded', function () {
     const sections = document.querySelectorAll('main > section');
+    const navLinks = document.querySelectorAll('.nav a');
+    const scrollBtn = document.getElementById('scrollToTop');
 
+    // Анимация секций и активная навигация
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
           entry.target.classList.add('visible');
+
+          // Обновляем активную ссылку в навигации
+          navLinks.forEach(link => link.classList.remove('active'));
+          const id = entry.target.getAttribute('id');
+          const activeLink = document.querySelector(`.nav a[href="#${id}"]`);
+          if (activeLink) activeLink.classList.add('active');
         }
       });
     }, { threshold: 0.15 });
 
-    sections.forEach(section => {
-      observer.observe(section);
+    sections.forEach(section => observer.observe(section));
+
+    // Кнопка "Наверх"
+    window.addEventListener('scroll', () => {
+      scrollBtn.classList.toggle('visible', window.scrollY > 300);
+    });
+
+    scrollBtn.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    // Плавная прокрутка для ссылок
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href');
+        if (targetId === '#') return;
+
+        const targetElement = document.querySelector(targetId);
+        if (targetElement) {
+          targetElement.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
     });
   });
 </script>
