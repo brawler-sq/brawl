@@ -766,3 +766,80 @@ html {
     font-size: 1.1rem !important;
   }
 }
+/* Дополнительные улучшения */
+.nav a.active {
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+    transform: scale(1.05);
+}
+
+.ride-card:nth-child(odd) {
+    border-top: 3px solid var(--secondary);
+}
+
+.ride-card:nth-child(even) {
+    border-top: 3px solid var(--primary);
+}
+
+.feature:nth-child(2) {
+    border-top-color: var(--secondary);
+}
+
+.feature:nth-child(3) {
+    border-top-color: var(--accent);
+}
+
+.offer-card h3 i {
+    margin-right: 10px;
+    font-size: 1.4rem;
+}
+
+.review-card:nth-child(2) {
+    border-left-color: var(--secondary);
+}
+
+.review-card:nth-child(3) {
+    border-left-color: var(--accent);
+}
+
+.map-container:hover iframe {
+    transform: scale(1.01);
+    transition: transform 0.3s ease;
+}
+
+.footer-column a i {
+    transition: transform 0.3s ease;
+}
+
+.footer-column a:hover i {
+    transform: translateY(-2px);
+}
+
+/* Анимация для иконок в контактах */
+.contact-info i {
+    animation: gentle-bounce 2s infinite ease-in-out;
+}
+
+@keyframes gentle-bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+}
+
+/* Эффект параллакса для главной секции */
+#home {
+    background-attachment: fixed;
+    background-position: center;
+    padding: 4rem 1rem;
+}
+
+/* Подсветка текущего года в футере */
+.footer-bottom:after {
+    content: "🎉";
+    margin-left: 10px;
+    animation: sparkle 1.5s infinite;
+}
+
+@keyframes sparkle {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+}
