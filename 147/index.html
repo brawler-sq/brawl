@@ -70,8 +70,9 @@
           <h2 class="section-title">Наши аттракционы</h2>
           <p class="section-subtitle">Развлечения для любого возраста и настроения</p>
         </div>
-
-        <div class="attractions-grid">
+    
+        <div class="attractions-grid" id="attractionsGrid">
+          <!-- Основные 4 аттракциона -->
           <div class="attraction-card">
             <div class="attraction-img">
               <img src="photo/koleco.webp" alt="Колесо обозрения" loading="lazy">
@@ -85,7 +86,7 @@
               </div>
             </div>
           </div>
-
+    
           <div class="attraction-card">
             <div class="attraction-img">
               <img src="photo/gorki.jpg" alt="Американские горки" loading="lazy">
@@ -99,7 +100,7 @@
               </div>
             </div>
           </div>
-
+    
           <div class="attraction-card">
             <div class="attraction-img">
               <img src="photo/карусель.jpeg" alt="Детская карусель" loading="lazy">
@@ -113,7 +114,7 @@
               </div>
             </div>
           </div>
-
+    
           <div class="attraction-card">
             <div class="attraction-img">
               <img src="photo/batut.jpg" alt="Батутный комплекс" loading="lazy">
@@ -127,10 +128,132 @@
               </div>
             </div>
           </div>
+    
+          <!-- Дополнительные аттракционы (изначально скрыты) -->
+          <div class="attraction-card hidden">
+            <div class="attraction-img">
+              <img src="https://via.placeholder.com/400x300/FF6B6B/FFFFFF?text=Детский+городок" alt="Детский городок"
+                loading="lazy">
+            </div>
+            <div class="attraction-content">
+              <h3>Детский городок</h3>
+              <p>Безопасная игровая зона для малышей с горками и лабиринтами</p>
+              <div class="attraction-meta">
+                <span class="meta"><i class="fa-solid fa-child"></i> 2-8 лет</span>
+                <span class="meta"><i class="fa-solid fa-shield"></i> Безопасно</span>
+              </div>
+            </div>
+          </div>
+    
+          <div class="attraction-card hidden">
+            <div class="attraction-img">
+              <img src="https://via.placeholder.com/400x300/4ECDC4/FFFFFF?text=Автодром" alt="Автодром" loading="lazy">
+            </div>
+            <div class="attraction-content">
+              <h3>Автодром</h3>
+              <p>Маленькие машины для будущих гонщиков</p>
+              <div class="attraction-meta">
+                <span class="meta"><i class="fa-solid fa-car"></i> 5-12 лет</span>
+                <span class="meta"><i class="fa-solid fa-flag-checkered"></i> Гонки</span>
+              </div>
+            </div>
+          </div>
+    
+          <div class="attraction-card hidden">
+            <div class="attraction-img">
+              <img src="https://via.placeholder.com/400x300/FFD166/FFFFFF?text=Комната+страха" alt="Комната страха"
+                loading="lazy">
+            </div>
+            <div class="attraction-content">
+              <h3>Комната страха</h3>
+              <p>Путешествие в мир мистики и загадок</p>
+              <div class="attraction-meta">
+                <span class="meta"><i class="fa-solid fa-ghost"></i> 16+ лет</span>
+                <span class="meta"><i class="fa-solid fa-skull"></i> Страшно</span>
+              </div>
+            </div>
+          </div>
+    
+          <div class="attraction-card hidden">
+            <div class="attraction-img">
+              <img src="https://via.placeholder.com/400x300/4ECDC4/FFFFFF?text=Водные+аттракционы" alt="Водные аттракционы"
+                loading="lazy">
+            </div>
+            <div class="attraction-content">
+              <h3>Водные аттракционы</h3>
+              <p>Освежающие водные горки и бассейны</p>
+              <div class="attraction-meta">
+                <span class="meta"><i class="fa-solid fa-water"></i> Для всех</span>
+                <span class="meta"><i class="fa-solid fa-sun"></i> Летний</span>
+              </div>
+            </div>
+          </div>
+    
+          <div class="attraction-card hidden">
+            <div class="attraction-img">
+              <img src="https://via.placeholder.com/400x300/FF6B6B/FFFFFF?text=Лазертаг" alt="Лазертаг-арена"
+                loading="lazy">
+            </div>
+            <div class="attraction-content">
+              <h3>Лазертаг-арена</h3>
+              <p>Командные сражения в высокотехнологичной арене</p>
+              <div class="attraction-meta">
+                <span class="meta"><i class="fa-solid fa-gamepad"></i> 10+ лет</span>
+                <span class="meta"><i class="fa-solid fa-users"></i> Команда</span>
+              </div>
+            </div>
+          </div>
+    
+          <div class="attraction-card hidden">
+            <div class="attraction-img">
+              <img src="https://via.placeholder.com/400x300/FFD166/FFFFFF?text=VR+аттракцион" alt="VR-аттракцион"
+                loading="lazy">
+            </div>
+            <div class="attraction-content">
+              <h3>VR-аттракцион</h3>
+              <p>Погружение в виртуальные миры с помощью VR-технологий</p>
+              <div class="attraction-meta">
+                <span class="meta"><i class="fa-solid fa-vr-cardboard"></i> 12+ лет</span>
+                <span class="meta"><i class="fa-solid fa-rocket"></i> Футуристично</span>
+              </div>
+            </div>
+          </div>
+    
+          <div class="attraction-card hidden">
+            <div class="attraction-img">
+              <img src="https://via.placeholder.com/400x300/4ECDC4/FFFFFF?text=Тир" alt="Тир" loading="lazy">
+            </div>
+            <div class="attraction-content">
+              <h3>Тир</h3>
+              <p>Соревнования в меткости для всей семьи</p>
+              <div class="attraction-meta">
+                <span class="meta"><i class="fa-solid fa-bullseye"></i> Для всех</span>
+                <span class="meta"><i class="fa-solid fa-medal"></i> Призы</span>
+              </div>
+            </div>
+          </div>
+    
+          <div class="attraction-card hidden">
+            <div class="attraction-img">
+              <img src="https://via.placeholder.com/400x300/FF6B6B/FFFFFF?text=Канатная+дорога" alt="Канатная дорога"
+                loading="lazy">
+            </div>
+            <div class="attraction-content">
+              <h3>Канатная дорога</h3>
+              <p>Неспешное путешествие над парком</p>
+              <div class="attraction-meta">
+                <span class="meta"><i class="fa-solid fa-mountain"></i> Для всех</span>
+                <span class="meta"><i class="fa-solid fa-eye"></i> Вид сверху</span>
+              </div>
+            </div>
+          </div>
         </div>
-
-        <div class="text-center">
-          <a href="#" class="btn btn-secondary">Посмотреть все аттракционы →</a>
+    
+        <div class="attractions-show-controls">
+          <button id="toggleAttractionsBtn" class="btn-toggle-attractions">
+            <span>Посмотреть все аттракционы</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
         </div>
       </div>
     </section>
@@ -390,6 +513,61 @@
         observer.observe(card);
       });
     });
+
+    // Показ/скрытие всех аттракционов
+      const toggleAttractionsBtn = document.getElementById('toggleAttractionsBtn');
+      const attractionsGrid = document.getElementById('attractionsGrid');
+      const hiddenAttractions = attractionsGrid.querySelectorAll('.attraction-card.hidden');
+      let allAttractionsShown = false;
+
+      toggleAttractionsBtn.addEventListener('click', () => {
+        allAttractionsShown = !allAttractionsShown;
+
+        if (allAttractionsShown) {
+          // Показываем все аттракционы
+          hiddenAttractions.forEach((card, index) => {
+            setTimeout(() => {
+              card.classList.remove('hidden');
+              card.classList.add('show-animation');
+
+              // Убираем класс анимации после её завершения
+              setTimeout(() => {
+                card.classList.remove('show-animation');
+              }, 500);
+            }, index * 100); // Задержка для последовательной анимации
+          });
+
+          // Обновляем текст кнопки
+          toggleAttractionsBtn.querySelector('span').textContent = 'Скрыть аттракционы';
+          toggleAttractionsBtn.classList.add('show-all');
+
+          // Добавляем наблюдатель для новых карточек
+          setTimeout(() => {
+            hiddenAttractions.forEach(card => {
+              observer.observe(card);
+            });
+          }, 100);
+
+        } else {
+          // Скрываем дополнительные аттракционы
+          hiddenAttractions.forEach(card => {
+            card.classList.add('hidden');
+            card.classList.remove('animated'); // Убираем анимацию наблюдателя
+          });
+
+          // Обновляем текст кнопки
+          toggleAttractionsBtn.querySelector('span').textContent = 'Посмотреть все аттракционы';
+          toggleAttractionsBtn.classList.remove('show-all');
+
+          // Плавная прокрутка к началу секции
+          setTimeout(() => {
+            document.querySelector('#attractions').scrollIntoView({
+              behavior: 'smooth',
+              block: 'start'
+            });
+          }, 300);
+        }
+      });
   </script>
 </body>
 
