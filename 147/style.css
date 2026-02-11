@@ -942,3 +942,29 @@ h4 {
 .attraction-card.show-animation {
   animation: slideUp 0.5s ease-out forwards;
 }
+
+/* Улучшенный эффект наведения на карточки билетов */
+.ticket-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+  border: 2px solid var(--primary-light);
+  /* добавляем рамку */
+  background: linear-gradient(to bottom, var(--white), #fff9f9);
+  /* лёгкая подсветка фона */
+}
+
+/* Кнопка "Выбрать" внутри карточки при наведении на всю карточку */
+.ticket-card:hover .btn {
+  background: var(--primary);
+  /* как у популярного билета */
+  color: var(--white);
+  border: none;
+  transform: translateY(-2px);
+  box-shadow: var(--shadow);
+}
+
+/* Дополнительно: курсор-указатель на всей карточке */
+.ticket-card {
+  cursor: pointer;
+  /* теперь видно, что карточка интерактивна */
+}
