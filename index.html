@@ -1,0 +1,902 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>FunPark — Парк аттракционов для всей семьи</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="FunPark — парк аттракционов для всей семьи. Колесо обозрения, американские горки, карусели и многое другое!">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Nunito:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+    
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="logo">
+        <i class="fa-solid fa-ferris-wheel"></i>
+        <span>Fun<span class="logo-accent">Park</span></span>
+      </div>
+      <nav class="nav">
+        <a href="#home" class="nav-link"><span>Главная</span></a>
+        <a href="#attractions" class="nav-link"><span>Аттракционы</span></a>
+        <a href="#tickets" class="nav-link"><span>Билеты</span></a>
+        <a href="#offers" class="nav-link"><span>Акции</span></a>
+        <a href="#contacts" class="nav-link"><span>Контакты</span></a>
+      </nav>
+      <button class="menu-toggle">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <main class="main">
+    <section id="home" class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <h1 class="hero-title">Добро пожаловать в <span class="highlight">FunPark</span></h1>
+          <p class="hero-subtitle">Мир ярких эмоций и незабываемых впечатлений для всей семьи</p>
+          <div class="hero-buttons">
+            <a href="#tickets" class="btn btn-primary">Купить билеты онлайн</a>
+            <a href="#attractions" class="btn btn-outline">Смотреть аттракционы</a>
+          </div>
+        </div>
+        <div class="hero-stats">
+          <div class="stat">
+            <div class="stat-number">50+</div>
+            <div class="stat-text">Аттракционов</div>
+          </div>
+          <div class="stat">
+            <div class="stat-number">10</div>
+            <div class="stat-text">Кафе и ресторанов</div>
+          </div>
+          <div class="stat">
+            <div class="stat-number">100%</div>
+            <div class="stat-text">Безопасность</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="attractions" class="section attractions">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Наши аттракционы</h2>
+          <p class="section-subtitle">Развлечения для любого возраста и настроения</p>
+        </div>
+    
+        <div class="attractions-grid" id="attractionsGrid">
+          <!-- Основные 4 аттракциона -->
+          <div class="attraction-card">
+            <div class="attraction-img">
+              <img src="photo/koleco.webp" alt="Колесо обозрения" loading="lazy">
+            </div>
+            <div class="attraction-content">
+              <h3>Колесо обозрения</h3>
+              <p>Панорамный вид на весь парк с высоты 40 метров</p>
+              <div class="attraction-meta">
+                <span class="meta"><i class="fa-solid fa-users"></i> Для всех</span>
+                <span class="meta"><i class="fa-solid fa-clock"></i> 15 мин</span>
+              </div>
+            </div>
+          </div>
+    
+          <div class="attraction-card">
+            <div class="attraction-img">
+              <img src="photo/gorki.jpg" alt="Американские горки" loading="lazy">
+            </div>
+            <div class="attraction-content">
+              <h3>Американские горки</h3>
+              <p>Адреналин и скорость на трассе длиной 800 метров</p>
+              <div class="attraction-meta">
+                <span class="meta"><i class="fa-solid fa-user-plus"></i> 12+ лет</span>
+                <span class="meta"><i class="fa-solid fa-bolt"></i> Экстрим</span>
+              </div>
+            </div>
+          </div>
+    
+          <div class="attraction-card">
+            <div class="attraction-img">
+              <img src="photo/карусель.jpeg" alt="Детская карусель" loading="lazy">
+            </div>
+            <div class="attraction-content">
+              <h3>Волшебная карусель</h3>
+              <p>Любимый аттракцион для самых маленьких гостей</p>
+              <div class="attraction-meta">
+                <span class="meta"><i class="fa-solid fa-child"></i> 3-10 лет</span>
+                <span class="meta"><i class="fa-solid fa-star"></i> Бестселлер</span>
+              </div>
+            </div>
+          </div>
+    
+          <div class="attraction-card">
+            <div class="attraction-img">
+              <img src="photo/batut.jpg" alt="Батутный комплекс" loading="lazy">
+            </div>
+            <div class="attraction-content">
+              <h3>Батутный комплекс</h3>
+              <p>Прыжки и акробатика на современных батутах</p>
+              <div class="attraction-meta">
+                <span class="meta"><i class="fa-solid fa-users"></i> Для всех</span>
+                <span class="meta"><i class="fa-solid fa-heart"></i> Активный отдых</span>
+              </div>
+            </div>
+          </div>
+    
+          <!-- Дополнительные аттракционы (изначально скрыты) -->
+          <div class="attraction-card hidden">
+            <div class="attraction-img">
+              <img src="photo/gorodok.jpeg" alt="Детский городок"
+                loading="lazy">
+            </div>
+            <div class="attraction-content">
+              <h3>Детский городок</h3>
+              <p>Безопасная игровая зона для малышей с горками и лабиринтами</p>
+              <div class="attraction-meta">
+                <span class="meta"><i class="fa-solid fa-child"></i> 2-8 лет</span>
+                <span class="meta"><i class="fa-solid fa-shield"></i> Безопасно</span>
+              </div>
+            </div>
+          </div>
+    
+          <div class="attraction-card hidden">
+            <div class="attraction-img">
+              <img src="photo/drom.jpg" alt="Автодром" loading="lazy">
+            </div>
+            <div class="attraction-content">
+              <h3>Автодром</h3>
+              <p>Маленькие машины для будущих гонщиков</p>
+              <div class="attraction-meta">
+                <span class="meta"><i class="fa-solid fa-car"></i> 5-12 лет</span>
+                <span class="meta"><i class="fa-solid fa-flag-checkered"></i> Гонки</span>
+              </div>
+            </div>
+          </div>
+    
+          <div class="attraction-card hidden">
+            <div class="attraction-img">
+              <img src="photo/it.jpeg" alt="Комната страха"
+                loading="lazy">
+            </div>
+            <div class="attraction-content">
+              <h3>Комната страха</h3>
+              <p>Путешествие в мир мистики и загадок</p>
+              <div class="attraction-meta">
+                <span class="meta"><i class="fa-solid fa-ghost"></i> 16+ лет</span>
+                <span class="meta"><i class="fa-solid fa-skull"></i> Страшно</span>
+              </div>
+            </div>
+          </div>
+    
+          <div class="attraction-card hidden">
+            <div class="attraction-img">
+              <img src="photo/baby.jpeg" alt="Водные аттракционы"
+                loading="lazy">
+            </div>
+            <div class="attraction-content">
+              <h3>Водные аттракционы</h3>
+              <p>Освежающие водные горки и бассейны</p>
+              <div class="attraction-meta">
+                <span class="meta"><i class="fa-solid fa-water"></i> Для всех</span>
+                <span class="meta"><i class="fa-solid fa-sun"></i> Летний</span>
+              </div>
+            </div>
+          </div>
+    
+          <div class="attraction-card hidden">
+            <div class="attraction-img">
+              <img src="photo/lazer.jpeg" alt="Лазертаг-арена"
+                loading="lazy">
+            </div>
+            <div class="attraction-content">
+              <h3>Лазертаг-арена</h3>
+              <p>Командные сражения в высокотехнологичной арене</p>
+              <div class="attraction-meta">
+                <span class="meta"><i class="fa-solid fa-gamepad"></i> 10+ лет</span>
+                <span class="meta"><i class="fa-solid fa-users"></i> Команда</span>
+              </div>
+            </div>
+          </div>
+    
+          <div class="attraction-card hidden">
+            <div class="attraction-img">
+              <img src="photo/vr.jpeg" alt="VR-аттракцион"
+                loading="lazy">
+            </div>
+            <div class="attraction-content">
+              <h3>VR-аттракцион</h3>
+              <p>Погружение в виртуальные миры с помощью VR-технологий</p>
+              <div class="attraction-meta">
+                <span class="meta"><i class="fa-solid fa-vr-cardboard"></i> 12+ лет</span>
+                <span class="meta"><i class="fa-solid fa-rocket"></i> Футуристично</span>
+              </div>
+            </div>
+          </div>
+    
+          <div class="attraction-card hidden">
+            <div class="attraction-img">
+              <img src="photo/arcade.jpg" alt="Тир" loading="lazy">
+            </div>
+            <div class="attraction-content">
+              <h3>Тир</h3>
+              <p>Соревнования в меткости для всей семьи</p>
+              <div class="attraction-meta">
+                <span class="meta"><i class="fa-solid fa-bullseye"></i> Для всех</span>
+                <span class="meta"><i class="fa-solid fa-medal"></i> Призы</span>
+              </div>
+            </div>
+          </div>
+    
+          <div class="attraction-card hidden">
+            <div class="attraction-img">
+              <img src="photo/kanatnaya.jpg" alt="Канатная дорога"
+                loading="lazy">
+            </div>
+            <div class="attraction-content">
+              <h3>Канатная дорога</h3>
+              <p>Неспешное путешествие над парком</p>
+              <div class="attraction-meta">
+                <span class="meta"><i class="fa-solid fa-mountain"></i> Для всех</span>
+                <span class="meta"><i class="fa-solid fa-eye"></i> Вид сверху</span>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+        <div class="attractions-show-controls">
+          <button id="toggleAttractionsBtn" class="btn-toggle-attractions">
+            <span>Посмотреть все аттракционы</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section id="tickets" class="section tickets">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Выберите свой билет</h2>
+          <p class="section-subtitle">Доступные варианты для максимального удовольствия</p>
+        </div>
+
+        <div class="tickets-grid">
+          <div class="ticket-card">
+            <div class="ticket-header">
+              <h3>Детский</h3>
+              <div class="price">800 ₽</div>
+              <p class="price-sub">в день</p>
+            </div>
+            <div class="ticket-features">
+              <p><i class="fa-solid fa-check"></i> Все детские аттракционы</p>
+              <p><i class="fa-solid fa-check"></i> Безлимитные катания</p>
+              <p><i class="fa-solid fa-check"></i> Сопровождение взрослого</p>
+              <p><i class="fa-solid fa-xmark"></i> Взрослые аттракционы</p>
+            </div>
+            <a href="#" class="btn btn-block">Выбрать</a>
+          </div>
+
+          <div class="ticket-card popular">
+            <div class="popular-badge">Популярный</div>
+            <div class="ticket-header">
+              <h3>Стандартный</h3>
+              <div class="price">1 500 ₽</div>
+              <p class="price-sub">в день</p>
+            </div>
+            <div class="ticket-features">
+              <p><i class="fa-solid fa-check"></i> Все аттракционы</p>
+              <p><i class="fa-solid fa-check"></i> Безлимитные катания</p>
+              <p><i class="fa-solid fa-check"></i> Фото на память</p>
+              <p><i class="fa-solid fa-check"></i> Скидка в кафе 10%</p>
+            </div>
+            <a href="#" class="btn btn-block btn-primary">Выбрать</a>
+          </div>
+
+          <div class="ticket-card">
+            <div class="ticket-header">
+              <h3>Семейный</h3>
+              <div class="price">3 500 ₽</div>
+              <p class="price-sub">2 взрослых + 2 детей</p>
+            </div>
+            <div class="ticket-features">
+              <p><i class="fa-solid fa-check"></i> Вся семья в парке</p>
+              <p><i class="fa-solid fa-check"></i> Бесплатная парковка</p>
+              <p><i class="fa-solid fa-check"></i> Фотосессия</p>
+              <p><i class="fa-solid fa-check"></i> Скидка в кафе 15%</p>
+            </div>
+            <a href="#" class="btn btn-block">Выбрать</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="offers" class="section offers">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Специальные предложения</h2>
+          <p class="section-subtitle">Экономьте с нашими акциями и скидками</p>
+        </div>
+
+        <div class="offers-grid">
+          <div class="offer-card">
+            <div class="offer-icon">
+              <i class="fa-solid fa-cake-candles"></i>
+            </div>
+            <h3>День рождения</h3>
+            <p>Именинник бесплатно + скидка 20% для друзей при предъявлении документа</p>
+          </div>
+
+          <div class="offer-card">
+            <div class="offer-icon">
+              <i class="fa-solid fa-sun"></i>
+            </div>
+            <h3>Утренний визит</h3>
+            <p>Скидка 25% на билеты при посещении парка с 10:00 до 13:00</p>
+          </div>
+
+          <div class="offer-card">
+            <div class="offer-icon">
+              <i class="fa-solid fa-user-group"></i>
+            </div>
+            <h3>Групповой</h3>
+            <p>От 10 человек — скидка 30% для всей группы по предварительной записи</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacts" class="section contacts">
+      <div class="container">
+        <div class="contacts-grid">
+          <div class="contact-info">
+            <h2 class="section-title">Контакты</h2>
+            <div class="contact-item">
+              <i class="fa-solid fa-location-dot"></i>
+              <div>
+                <h4>Адрес</h4>
+                <p>г. Москва, ул. Парковая, 10</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="fa-solid fa-clock"></i>
+              <div>
+                <h4>Часы работы</h4>
+                <p>Пн–Пт: 10:00–20:00</p>
+                <p>Сб–Вс: 10:00–23:00</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="fa-solid fa-phone"></i>
+              <div>
+                <h4>Телефон</h4>
+                <p>+7 (900) 555-35-35</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="fa-solid fa-envelope"></i>
+              <div>
+                <h4>Email</h4>
+                <p>info@funpark.ru</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="map-container">
+            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A...&amp;source=constructor" width="100%"
+              height="100%" style="border:0; border-radius: 12px;" allowfullscreen>
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="logo">
+            <i class="fa-solid fa-ferris-wheel"></i>
+            <span>Fun<span class="logo-accent">Park</span></span>
+          </div>
+          <p>Парк аттракционов и развлечений для всей семьи!</p>
+          <div class="social-links">
+            <a href="#"><i class="fa-brands fa-vk"></i></a>
+            <a href="#"><i class="fa-brands fa-telegram"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Навигация</h4>
+          <a href="#home">Главная</a>
+          <a href="#attractions">Аттракционы</a>
+          <a href="#tickets">Билеты</a>
+          <a href="#offers">Акции</a>
+        </div>
+
+        <div class="footer-col">
+          <h4>Информация</h4>
+          <a href="#">Правила парка</a>
+          <a href="#">Безопасность</a>
+          <a href="#">Вопросы и ответы</a>
+          <a href="#">Вакансии</a>
+        </div>
+
+        <div class="footer-col">
+          <h4>Подписка</h4>
+          <p>Узнавайте первыми о новых акциях и событиях</p>
+          <div class="subscribe">
+            <input type="email" placeholder="Ваш email">
+            <button class="btn btn-small">Подписаться</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 FunPark. Все права защищены.</p>
+      </div>
+    </div>
+  </footer>
+
+  <button id="scrollToTop" class="scroll-top-btn">
+    <i class="fa-solid fa-chevron-up"></i>
+  </button>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      // Мобильное меню
+      const menuToggle = document.querySelector('.menu-toggle');
+      const nav = document.querySelector('.nav');
+  
+      menuToggle.addEventListener('click', () => {
+        nav.classList.toggle('active');
+        menuToggle.innerHTML = nav.classList.contains('active')
+          ? '<i class="fa-solid fa-xmark"></i>'
+          : '<i class="fa-solid fa-bars"></i>';
+        
+        // 1. Блокировка скролла при открытом меню на мобильных
+        document.body.style.overflow = nav.classList.contains('active') ? 'hidden' : '';
+      });
+  
+      // 2. Закрытие меню при клике вне навигации
+      document.addEventListener('click', (e) => {
+        if (nav.classList.contains('active') && 
+            !nav.contains(e.target) && 
+            !menuToggle.contains(e.target)) {
+          nav.classList.remove('active');
+          menuToggle.innerHTML = '<i class="fa-solid fa-bars"></i>';
+          document.body.style.overflow = '';
+        }
+      });
+  
+      // Плавная прокрутка
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+          const targetId = this.getAttribute('href');
+          if (targetId === '#') return;
+  
+          const targetElement = document.querySelector(targetId);
+          if (targetElement) {
+            window.scrollTo({
+              top: targetElement.offsetTop - 80,
+              behavior: 'smooth'
+            });
+  
+            nav.classList.remove('active');
+            menuToggle.innerHTML = '<i class="fa-solid fa-bars"></i>';
+            document.body.style.overflow = '';
+          }
+        });
+      });
+  
+      // Кнопка "Наверх"
+      const scrollBtn = document.getElementById('scrollToTop');
+  
+      window.addEventListener('scroll', () => {
+        scrollBtn.classList.toggle('visible', window.scrollY > 300);
+      });
+  
+      scrollBtn.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+  
+      // Анимация при скролле
+      const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+      };
+  
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('animated');
+          }
+        });
+      }, observerOptions);
+  
+      // Наблюдаем за карточками
+      document.querySelectorAll('.attraction-card, .ticket-card, .offer-card').forEach(card => {
+        observer.observe(card);
+      });
+  
+      // Показ/скрытие всех аттракционов
+      const toggleAttractionsBtn = document.getElementById('toggleAttractionsBtn');
+      const attractionsGrid = document.getElementById('attractionsGrid');
+      const hiddenAttractions = attractionsGrid.querySelectorAll('.attraction-card.hidden');
+      let allAttractionsShown = false;
+  
+      // 3. Сохраняем состояние в localStorage
+      const savedState = localStorage.getItem('attractionsShown');
+      if (savedState === 'true') {
+        setTimeout(() => toggleAttractionsBtn.click(), 100);
+      }
+  
+      toggleAttractionsBtn.addEventListener('click', () => {
+        allAttractionsShown = !allAttractionsShown;
+        
+        // 4. Сохраняем состояние
+        localStorage.setItem('attractionsShown', allAttractionsShown);
+  
+        if (allAttractionsShown) {
+          // Показываем все аттракционы
+          hiddenAttractions.forEach((card, index) => {
+            setTimeout(() => {
+              card.classList.remove('hidden');
+              card.classList.add('show-animation');
+  
+              setTimeout(() => {
+                card.classList.remove('show-animation');
+              }, 500);
+            }, index * 100);
+          });
+  
+          toggleAttractionsBtn.querySelector('span').textContent = 'Скрыть аттракционы';
+          toggleAttractionsBtn.classList.add('show-all');
+  
+          setTimeout(() => {
+            hiddenAttractions.forEach(card => {
+              observer.observe(card);
+            });
+          }, 100);
+  
+        } else {
+          hiddenAttractions.forEach(card => {
+            card.classList.add('hidden');
+            card.classList.remove('animated');
+          });
+  
+          toggleAttractionsBtn.querySelector('span').textContent = 'Посмотреть все аттракционы';
+          toggleAttractionsBtn.classList.remove('show-all');
+  
+          setTimeout(() => {
+            document.querySelector('#attractions').scrollIntoView({
+              behavior: 'smooth',
+              block: 'start'
+            });
+          }, 300);
+        }
+      });
+  
+      // 5. Обработка клавиши Escape для закрытия меню
+      window.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && nav.classList.contains('active')) {
+          nav.classList.remove('active');
+          menuToggle.innerHTML = '<i class="fa-solid fa-bars"></i>';
+          document.body.style.overflow = '';
+        }
+      });
+  
+      // 6. Обновление активной ссылки в меню при прокрутке
+      const sections = document.querySelectorAll('section[id]');
+      
+      function updateActiveNavLink() {
+        const scrollPosition = window.scrollY + 100;
+        
+        sections.forEach(section => {
+          const sectionTop = section.offsetTop;
+          const sectionBottom = sectionTop + section.offsetHeight;
+          const sectionId = section.getAttribute('id');
+          
+          if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
+            document.querySelectorAll('.nav-link').forEach(link => {
+              link.classList.remove('active-nav');
+              if (link.getAttribute('href') === `#${sectionId}`) {
+                link.classList.add('active-nav');
+              }
+            });
+          }
+        });
+      }
+      
+      window.addEventListener('scroll', updateActiveNavLink);
+      updateActiveNavLink();
+  
+      // 7. Ленивая загрузка карт Yandex (отложенная загрузка)
+      const mapIframe = document.querySelector('.map-container iframe');
+      if (mapIframe && mapIframe.dataset.src) {
+        setTimeout(() => {
+          mapIframe.src = mapIframe.dataset.src;
+        }, 1000);
+      }
+  
+      // 8. Валидация email в подписке
+      const subscribeForm = document.querySelector('.subscribe');
+      if (subscribeForm) {
+        subscribeForm.addEventListener('submit', (e) => {
+          e.preventDefault();
+          const emailInput = subscribeForm.querySelector('input[type="email"]');
+          const email = emailInput.value.trim();
+          
+          if (email && /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+            alert('Спасибо за подписку! Проверьте вашу почту.');
+            emailInput.value = '';
+          } else {
+            alert('Пожалуйста, введите корректный email адрес');
+          }
+        });
+      }
+  
+      // 9. Добавляем touch-события для мобильных устройств
+      if ('ontouchstart' in window) {
+        document.querySelectorAll('.attraction-card, .ticket-card, .offer-card').forEach(card => {
+          card.addEventListener('touchstart', function() {
+            this.style.transform = 'scale(0.98)';
+          });
+          card.addEventListener('touchend', function() {
+            this.style.transform = 'scale(1)';
+          });
+        });
+      }
+  
+      // 10. Предзагрузка изображений для скрытых аттракционов
+      const preloadImages = () => {
+        hiddenAttractions.forEach(card => {
+          const img = card.querySelector('img');
+          if (img) {
+            const src = img.getAttribute('src');
+            const preloadLink = document.createElement('link');
+            preloadLink.rel = 'preload';
+            preloadLink.as = 'image';
+            preloadLink.href = src;
+            document.head.appendChild(preloadLink);
+          }
+        });
+      };
+      preloadImages();
+  
+      // 11. Анимация цифр в статистике при появлении
+      const statsSection = document.querySelector('.hero-stats');
+      if (statsSection) {
+        const statsObserver = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              animateNumbers();
+              statsObserver.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.5 });
+        
+        statsObserver.observe(statsSection);
+      }
+  
+      function animateNumbers() {
+        document.querySelectorAll('.stat-number').forEach(stat => {
+          const target = parseInt(stat.textContent);
+          if (isNaN(target)) return;
+          
+          let current = 0;
+          const increment = target / 50;
+          const timer = setInterval(() => {
+            current += increment;
+            if (current >= target) {
+              stat.textContent = target + (stat.textContent.includes('+') ? '+' : '');
+              clearInterval(timer);
+            } else {
+              stat.textContent = Math.floor(current) + (stat.textContent.includes('+') ? '+' : '');
+            }
+          }, 20);
+        });
+      }
+  
+      // 12. Обработка кликов по карточкам билетов
+      document.querySelectorAll('.ticket-card').forEach(card => {
+        card.addEventListener('click', function(e) {
+          if (!e.target.classList.contains('btn')) {
+            const btn = this.querySelector('.btn');
+            if (btn) {
+              btn.style.transform = 'scale(0.95)';
+              setTimeout(() => btn.style.transform = '', 200);
+              setTimeout(() => window.location.href = btn.getAttribute('href') || '#', 200);
+            }
+          }
+        });
+      });
+  
+      // 13. Отслеживание времени на странице
+      let timeOnPage = 0;
+      setInterval(() => {
+        timeOnPage++;
+        if (timeOnPage === 30) { // 30 секунд
+          const popup = document.createElement('div');
+          popup.className = 'time-popup';
+          popup.innerHTML = `
+            <div class="popup-content">
+              <h4>Уже уходите?</h4>
+              <p>Подпишитесь на новости и получите скидку 10% на первый визит!</p>
+              <button class="btn btn-primary close-popup">ОК</button>
+            </div>
+          `;
+          document.body.appendChild(popup);
+          
+          setTimeout(() => {
+            popup.querySelector('.close-popup').addEventListener('click', () => {
+              popup.remove();
+            });
+          }, 100);
+        }
+      }, 1000);
+  
+      // 14. Добавляем класс для разных браузеров
+      const ua = navigator.userAgent;
+      if (ua.includes('Chrome')) document.body.classList.add('browser-chrome');
+      else if (ua.includes('Firefox')) document.body.classList.add('browser-firefox');
+      else if (ua.includes('Safari')) document.body.classList.add('browser-safari');
+  
+      // 15. Отслеживание скорости интернета
+      if (navigator.connection) {
+        const connection = navigator.connection;
+        if (connection.saveData || connection.effectiveType.includes('2g')) {
+          document.querySelectorAll('img[loading="lazy"]').forEach(img => {
+            img.loading = 'eager';
+          });
+        }
+      }
+  
+      // 16. Добавляем микроразметку для SEO
+      const scriptJson = document.createElement('script');
+      scriptJson.type = 'application/ld+json';
+      scriptJson.textContent = JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "AmusementPark",
+        "name": "FunPark",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Москва",
+          "streetAddress": "ул. Парковая, 10"
+        },
+        "priceRange": "800₽ - 3500₽"
+      });
+      document.head.appendChild(scriptJson);
+  
+      // 17. Кэширование DOM-элементов
+      const cachedElements = {
+        header: document.querySelector('.header'),
+        hero: document.querySelector('.hero'),
+        footer: document.querySelector('.footer')
+      };
+  
+      // 18. Плавное появление хедера при скролле вверх
+      let lastScrollTop = 0;
+      window.addEventListener('scroll', () => {
+        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        if (scrollTop > lastScrollTop && scrollTop > 200) {
+          cachedElements.header.style.transform = 'translateY(-100%)';
+        } else {
+          cachedElements.header.style.transform = 'translateY(0)';
+        }
+        lastScrollTop = scrollTop;
+      });
+  
+      // 19. Добавляем поддержку WebP
+      function checkWebPSupport() {
+        const canvas = document.createElement('canvas');
+        if (canvas.toDataURL('image/webp').indexOf('data:image/webp') === 0) {
+          document.body.classList.add('webp-support');
+        }
+      }
+      checkWebPSupport();
+  
+      // 20. Оптимизация анимаций
+      let ticking = false;
+      window.addEventListener('scroll', () => {
+        if (!ticking) {
+          window.requestAnimationFrame(() => {
+            updateActiveNavLink();
+            ticking = false;
+          });
+          ticking = true;
+        }
+      });
+  
+      // 21. Защита от XSS в формах
+      function sanitizeHTML(str) {
+        const div = document.createElement('div');
+        div.textContent = str;
+        return div.innerHTML;
+      }
+  
+      // 22. Добавляем кнопку "Поделиться"
+      const shareBtn = document.createElement('button');
+      shareBtn.className = 'share-btn';
+      shareBtn.innerHTML = '<i class="fa-solid fa-share-nodes"></i>';
+      shareBtn.title = 'Поделиться сайтом';
+      document.body.appendChild(shareBtn);
+      
+      shareBtn.addEventListener('click', () => {
+        if (navigator.share) {
+          navigator.share({
+            title: 'FunPark - Парк аттракционов',
+            text: 'Мир ярких эмоций и незабываемых впечатлений для всей семьи',
+            url: window.location.href
+          });
+        } else {
+          navigator.clipboard.writeText(window.location.href);
+          alert('Ссылка скопирована в буфер обмена!');
+        }
+      });
+  
+      // 23. Добавляем CSS для новых элементов
+      const style = document.createElement('style');
+      style.textContent = `
+        .active-nav { color: var(--primary) !important; }
+        .active-nav::after { width: 100% !important; }
+        .time-popup {
+          position: fixed; bottom: 100px; right: 30px;
+          background: white; border-radius: 16px;
+          box-shadow: var(--shadow-lg); padding: 25px;
+          max-width: 300px; z-index: 1001;
+          animation: slideIn 0.3s ease;
+        }
+        .share-btn {
+          position: fixed; bottom: 100px; right: 30px;
+          width: 50px; height: 50px;
+          background: var(--secondary); color: white;
+          border: none; border-radius: 50%;
+          cursor: pointer; z-index: 999;
+          box-shadow: var(--shadow);
+          transition: var(--transition);
+        }
+        .share-btn:hover {
+          background: var(--secondary-light);
+          transform: translateY(-3px);
+        }
+        @media (max-width: 768px) {
+          .share-btn { bottom: 100px; right: 20px; }
+          .time-popup { bottom: 170px; right: 20px; left: 20px; max-width: none; }
+        }
+      `;
+      document.head.appendChild(style);
+  
+      // 24. Добавляем service worker для PWA (если нужно)
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js').catch(console.log);
+        });
+      }
+  
+      // 25. Аналитика кликов
+      window.analytics = {
+        trackEvent(category, action, label) {
+          console.log(`Analytics: ${category} - ${action} - ${label}`);
+          // Здесь можно добавить отправку в Яндекс.Метрику или Google Analytics
+        }
+      };
+  
+      // Отслеживаем клики по кнопкам
+      document.querySelectorAll('.btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+          window.analytics.trackEvent('Button', 'Click', btn.textContent.trim());
+        });
+      });
+  
+    });
+  </script>
