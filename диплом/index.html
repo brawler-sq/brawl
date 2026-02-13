@@ -258,7 +258,25 @@
         </div>
       </div>
     </section>
-
+    <!-- Наши преимущества -->
+    <section id="advantages" class="section advantages">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Наши преимущества</h2>
+          <p class="section-subtitle">Почему тысячи семей выбирают FunPark</p>
+        </div>
+        <div class="advantages-grid">
+          <div class="advantage-card"><div class="advantage-icon"><i class="fa-solid fa-shield-haltered"></i></div><h3>Безопасность</h3><p>Ежедневная проверка и сертификация всех аттракционов</p></div>
+          <div class="advantage-card"><div class="advantage-icon"><i class="fa-solid fa-clock"></i></div><h3>Без очередей</h3><p>Умная система бронирования и электронные билеты</p></div>
+          <div class="advantage-card"><div class="advantage-icon"><i class="fa-solid fa-wifi"></i></div><h3>Бесплатный Wi-Fi</h3><p>Быстрый интернет на всей территории парка</p></div>
+          <div class="advantage-card"><div class="advantage-icon"><i class="fa-solid fa-tree"></i></div><h3>Зеленая зона</h3><p>5 гектаров парковой зоны с тенистыми аллеями</p></div>
+          <div class="advantage-card"><div class="advantage-icon"><i class="fa-solid fa-wheelchair"></i></div><h3>Доступная среда</h3><p>Полная адаптация для маломобильных групп</p></div>
+          <div class="advantage-card"><div class="advantage-icon"><i class="fa-solid fa-piggy-bank"></i></div><h3>Гибкие тарифы</h3><p>Семейные пакеты и сезонные предложения</p></div>
+          <div class="advantage-card"><div class="advantage-icon"><i class="fa-solid fa-baby-carriage"></i></div><h3>Детская инфраструктура</h3><p>Прокат колясок, комнаты матери и ребенка</p></div>
+          <div class="advantage-card"><div class="advantage-icon"><i class="fa-solid fa-camera"></i></div><h3>Фото на память</h3><p>Профессиональные фотографы в парке</p></div>
+        </div>
+      </div>
+    </section>
     <section id="tickets" class="section tickets">
       <div class="container">
         <div class="section-header">
@@ -897,6 +915,9 @@
           window.analytics.trackEvent('Button', 'Click', btn.textContent.trim());
         });
       });
-  
+
+document.querySelectorAll('.attraction-card, .ticket-card, .offer-card, .advantage-card').forEach(card => {
+  observer.observe(card);
+});
     });
   </script>

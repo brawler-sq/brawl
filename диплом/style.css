@@ -968,3 +968,24 @@
     cursor: pointer;
     /* теперь видно, что карточка интерактивна */
   }
+  .advantages { background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%); padding: 80px 0; }
+.advantages-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 25px; }
+.advantage-card { background: var(--white); border-radius: var(--radius); padding: 30px 20px; text-align: center; box-shadow: var(--shadow); transition: var(--transition); opacity: 0; transform: translateY(20px); border: 1px solid rgba(78,205,196,0.1); }
+.advantage-card.animated { opacity: 1; transform: translateY(0); animation: fadeUp 0.6s ease-out forwards; }
+.advantage-card:hover { transform: translateY(-8px); box-shadow: var(--shadow-lg); border-color: var(--secondary-light); }
+.advantage-icon { width: 70px; height: 70px; background: var(--secondary); border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; font-size: 32px; color: white; transition: var(--transition); }
+.advantage-card:hover .advantage-icon { border-radius: 50%; background: var(--primary); transform: scale(1.1) rotate(5deg); }
+.advantage-card h3 { font-size: 20px; margin-bottom: 12px; color: var(--dark); }
+.advantage-card h3::after { content: ''; position: absolute; bottom: -6px; left: 50%; transform: translateX(-50%); width: 35px; height: 3px; background: var(--secondary); border-radius: 2px; transition: var(--transition); }
+.advantage-card:hover h3::after { width: 55px; background: var(--primary); }
+.advantage-card p { color: var(--gray); line-height: 1.6; font-size: 15px; }
+.advantage-card:nth-child(1) .advantage-icon { background: linear-gradient(135deg, #FF6B6B, #FF4757); }
+.advantage-card:nth-child(2) .advantage-icon { background: linear-gradient(135deg, #4ECDC4, #3AA39B); }
+.advantage-card:nth-child(3) .advantage-icon { background: linear-gradient(135deg, #FFD166, #FFB700); }
+.advantage-card:nth-child(4) .advantage-icon { background: linear-gradient(135deg, #6C5CE7, #5649C0); }
+.advantage-card:nth-child(5) .advantage-icon { background: linear-gradient(135deg, #A8E6CF, #7BC9A4); }
+.advantage-card:nth-child(6) .advantage-icon { background: linear-gradient(135deg, #FF8A5C, #FF6B3D); }
+.advantage-card:nth-child(7) .advantage-icon { background: linear-gradient(135deg, #786FA6, #5D4F8C); }
+.advantage-card:nth-child(8) .advantage-icon { background: linear-gradient(135deg, #FFB8B8, #FF8E8E); }
+@media (max-width: 768px) { .advantages { padding: 50px 0; } .advantages-grid { gap: 20px; } .advantage-card { padding: 25px 15px; } 
+}
